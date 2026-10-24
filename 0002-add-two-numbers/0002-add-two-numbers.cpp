@@ -11,9 +11,9 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode dummy(0);
-        ListNode* tail = &dummy;
-        int carry = 0;
+        ListNode dummy(0);    //dummy node local di stack
+        ListNode* tail = &dummy; //l1 pointer
+        int carry = 0;    //simpan sisa penjumlh
 
         while (l1 != nullptr || l2 != nullptr || carry != 0) {
             int sum = carry;
@@ -28,12 +28,12 @@ public:
                 l2 = l2->next;
                 
             }
-            
+            // carry baru untuk digit berikut
             carry = sum/10 ;
-            
+            // node baru
             tail->next = new ListNode(sum % 10);
-            tail = tail->next;
+            tail = tail->next; //penggeseran pointer
         }
-        return dummy.next;
+        return dummy.next; //kemabalikan head asli sebelah dummy node
     }
 };
