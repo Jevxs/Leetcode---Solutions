@@ -1,5 +1,6 @@
 # Leetcode---Solutions
-Solution for Leetcode problems using C++ and Python
+Solution for Leetcode problems using C++ and Python / other language if I would study them
+14 October 2026 -???
 
 <!---LeetCode Topics Start-->
 # LeetCode Topics
