@@ -16,6 +16,7 @@ Solution for Leetcode problems using C++ and Python / other language if I would 
 | [0001-two-sum](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0012-integer-to-roman](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0013-roman-to-integer) |
 ## Linked List
 |  |
 | ------- |
@@ -27,6 +28,7 @@ Solution for Leetcode problems using C++ and Python / other language if I would 
 | [0007-reverse-integer](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0009-palindrome-number) |
 | [0012-integer-to-roman](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0013-roman-to-integer) |
 ## Recursion
 |  |
 | ------- |
@@ -41,6 +43,7 @@ Solution for Leetcode problems using C++ and Python / other language if I would 
 | [0008-string-to-integer-atoi](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0008-string-to-integer-atoi) |
 | [0010-regular-expression-matching](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0010-regular-expression-matching) |
 | [0012-integer-to-roman](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0013-roman-to-integer) |
 ## Sliding Window
 |  |
 | ------- |
