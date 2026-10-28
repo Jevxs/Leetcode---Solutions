@@ -12,6 +12,7 @@ Solution for Leetcode problems using C++ and Python / other language if I would 
 | [0011-container-with-most-water](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0011-container-with-most-water) |
 | [0014-longest-common-prefix](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0014-longest-common-prefix) |
 | [0015-3sum](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0015-3sum) |
+| [0016-3sum-closest](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0016-3sum-closest) |
 ## Hash Table
 |  |
 | ------- |
@@ -65,6 +66,7 @@ Solution for Leetcode problems using C++ and Python / other language if I would 
 | [0005-longest-palindromic-substring](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0015-3sum) |
+| [0016-3sum-closest](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0016-3sum-closest) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -86,4 +88,5 @@ Solution for Leetcode problems using C++ and Python / other language if I would 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0015-3sum) |
+| [0016-3sum-closest](https://github.com/Jevxs/Leetcode---Solutions/tree/master/0016-3sum-closest) |
 <!---LeetCode Topics End-->
