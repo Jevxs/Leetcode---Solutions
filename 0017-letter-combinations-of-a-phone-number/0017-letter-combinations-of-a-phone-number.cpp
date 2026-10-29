@@ -1,40 +1,48 @@
 #include <vector>
 #include <string>
-#include <unordered_map>
 
 using namespace std;
 
 class Solution {
 private:
-    vector<string> res;
-    // Map digits to corresponding characters
-    unordered_map<char, string> digitToChar = {
-        {'2', "abc"}, {'3', "def"}, {'4', "ghi"}, 
-        {'5', "jkl"}, {'6', "mno"}, {'7', "pqrs"}, 
-        {'8', "tuv"}, {'9', "wxyz"}
+    // Using a simple array/vector instead of unordered_map is faster due to contiguous memory (O(1) lookup)
+    const vector<string> digitToChar = {
+        "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
     };
 
-    void backtrack(int i, string curStr, const string& digits) {
-        // Base case: if current string length matches digits length
-        if (curStr.length() == digits.length()) {
+    void backtrack(int i, string& curStr, const string& digits, vector<string>& res) {
+        if (i == digits.length()) {
             res.push_back(curStr);
             return;
         }
         
-        // Loop through all characters corresponding to the current digit
-        for (char c : digitToChar[digits[i]]) {
-            backtrack(i + 1, curStr + c, digits);
+        // Convert char digit to int index (e.g., '2' - '0' = 2)
+        int digit = digits[i] - '0'; 
+        
+        for (char c : digitToChar[digit]) {
+            curStr.push_back(c);                 // 1. Choose: Add char to the end of the shared string
+            backtrack(i + 1, curStr, digits, res); // 2. Explore: Recurse without making copies
+            curStr.pop_back();                  // 3. Unchoose: Backtrack by removing it (O(1))
         }
     }
 
 public:
     vector<string> letterCombinations(string digits) {
-        res.clear(); // Clear results for multiple test cases
+        vector<string> res;
+        if (digits.empty()) return res;
         
-        if (!digits.empty()) {
-            backtrack(0, "", digits);
+        // Optimization: Pre-allocate space in the result vector to prevent reallocation resizing overhead
+        int totalCombinations = 1;
+        for (char d : digits) {
+            totalCombinations *= digitToChar[d - '0'].length();
         }
+        res.reserve(totalCombinations);
         
+        string curStr = "";
+        // Pre-allocate internal string buffer capacity to avoid runtime string resizing
+        curStr.reserve(digits.length()); 
+        
+        backtrack(0, curStr, digits, res);
         return res;
     }
 };
